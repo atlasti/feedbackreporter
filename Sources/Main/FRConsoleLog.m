@@ -94,12 +94,16 @@
                 char **rawLineContents = malloc(2 * sizeof(char *));
 				
 				size_t length = strlen(msgTime) + 1;
-                rawLineContents[FR_CONSOLELOG_TIME] = malloc(length);
-                strlcpy(rawLineContents[FR_CONSOLELOG_TIME], msgTime, length);
+                rawLineContents[FR_CONSOLELOG_TIME] = malloc(length+1);
+//                strlcpy(rawLineContents[FR_CONSOLELOG_TIME], msgTime, length);
+                memcpy(rawLineContents[FR_CONSOLELOG_TIME], msgTime, length);
+                *(rawLineContents[FR_CONSOLELOG_TIME] + length) = '\0';
 
                 length = strlen(msgText) + 1;
-				rawLineContents[FR_CONSOLELOG_TEXT] = malloc(length);
-                strlcpy(rawLineContents[FR_CONSOLELOG_TEXT], msgText, length);
+				rawLineContents[FR_CONSOLELOG_TEXT] = malloc(length+1);
+//                strlcpy(rawLineContents[FR_CONSOLELOG_TEXT], msgText, length);
+                memcpy(rawLineContents[FR_CONSOLELOG_TEXT], msgText, length);
+                *(rawLineContents[FR_CONSOLELOG_TEXT] + length) = '\0';
 
                 rawConsoleLines[consoleLinesProcessed-1] = rawLineContents;
             }
