@@ -29,7 +29,7 @@
 + (NSString*) logSince:(NSDate*)since maxSize:(NSNumber*)maximumSize
 {
     NSUInteger consoleOutputLength = 0;
-    NSUInteger rawConsoleLinesCapacity = 100;
+    NSUInteger rawConsoleLinesCapacity = 1000;
     NSUInteger consoleLinesProcessed = 0;
 
     char ***rawConsoleLines = malloc(rawConsoleLinesCapacity * sizeof(char **));
