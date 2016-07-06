@@ -130,9 +130,9 @@
                 return @"PowerPC G4";
             case CPUFAMILY_POWERPC_G5:
                 return @"PowerPC G5";
-            case CPUFAMILY_INTEL_CORE:
+            case 0x73d67300: // CPUFAMILY_INTEL_CORE == CPUFAMILY_INTEL_YONAH (both deprecated)
                 return @"Intel Core Duo";
-            case CPUFAMILY_INTEL_CORE2:
+            case 0x426f69ef: // CPUFAMILY_INTEL_CORE2 == CPUFAMILY_INTEL_MEROM (both deprecated)
                 return @"Intel Core 2 Duo";
             case CPUFAMILY_INTEL_PENRYN:
                 return @"Intel Core 2 Duo (Penryn)";
