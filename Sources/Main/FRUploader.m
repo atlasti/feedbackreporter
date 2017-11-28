@@ -174,7 +174,8 @@
 - (void) cancel
 {
     [connection cancel];
-    [connection autorelease], connection = nil;
+    [connection autorelease];
+    connection = nil;
 }
 
 - (NSString*) response
