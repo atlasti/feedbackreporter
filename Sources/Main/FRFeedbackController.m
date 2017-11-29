@@ -306,7 +306,8 @@
 {
 	(void)sender;
 
-    [uploader cancel], uploader = nil;
+	[uploader cancel];
+	uploader = nil;
 
     [self close];
 }
@@ -440,7 +441,8 @@
     [indicator stopAnimation:self];
     [indicator setHidden:YES];
 
-    [uploader release], uploader = nil;
+    [uploader release];
+    uploader = nil;
 
     [messageView setEditable:YES];
     [sendButton setEnabled:YES];
@@ -467,7 +469,8 @@
 
     NSString *response = [uploader response];
 
-    [uploader release], uploader = nil;
+    [uploader release];
+    uploader = nil;
 
     [messageView setEditable:YES];
     [sendButton setEnabled:YES];
