@@ -451,7 +451,7 @@
     [alert addButtonWithTitle:FRLocalizedString(@"OK", nil)];
     [alert setMessageText:FRLocalizedString(@"Sorry, failed to submit your feedback to the server.", nil)];
     [alert setInformativeText:[NSString stringWithFormat:FRLocalizedString(@"Error: %@", nil), [error localizedDescription]]];
-    [alert setAlertStyle:NSWarningAlertStyle];
+    [alert setAlertStyle:NSAlertStyleWarning];
     [alert runModal];
     [alert release];
 
@@ -492,7 +492,7 @@
             [alert addButtonWithTitle:FRLocalizedString(@"OK", nil)];
             [alert setMessageText:FRLocalizedString(@"Sorry, failed to submit your feedback to the server.", nil)];
             [alert setInformativeText:[NSString stringWithFormat:FRLocalizedString(@"Error: %@", nil), line]];
-            [alert setAlertStyle:NSWarningAlertStyle];
+            [alert setAlertStyle:NSAlertStyleWarning];
             [alert runModal];
             [alert release];
 
