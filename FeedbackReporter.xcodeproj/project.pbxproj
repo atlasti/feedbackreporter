@@ -19,6 +19,7 @@
 		444DCB5C1417D13E00C5636D /* FeedbackReporter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444DCB5E1417D13E00C5636D /* FeedbackReporter.xib */; };
 		444DCB651417D18000C5636D /* App.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444DCB671417D18000C5636D /* App.xib */; };
 		444DCB721417D2D800C5636D /* FeedbackReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 444DCB701417D2D800C5636D /* FeedbackReporter.strings */; };
+		4D38427524093D660007E04B /* FRConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D006DF40E1438F6000B6AFC /* FRConsoleLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D0EC0220DF00F250045EB76 /* FRExceptionReportingApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0EC0200DF00F250045EB76 /* FRExceptionReportingApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D0EC0230DF00F250045EB76 /* FRExceptionReportingApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0EC0210DF00F250045EB76 /* FRExceptionReportingApplication.m */; };
 		9D0EC0290DF011DB0045EB76 /* NSException+Callstack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0EC0270DF011DB0045EB76 /* NSException+Callstack.h */; };
@@ -31,7 +32,7 @@
 		9DA7D6F00DEB8E5D00C3B586 /* FRApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6E30DEB8E5D00C3B586 /* FRApplication.m */; };
 		9DA7D6F10DEB8E5D00C3B586 /* FRCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA7D6E40DEB8E5D00C3B586 /* FRCommand.h */; };
 		9DA7D6F20DEB8E5D00C3B586 /* FRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6E50DEB8E5D00C3B586 /* FRCommand.m */; };
-		9DA7D6F30DEB8E5D00C3B586 /* FRCrashLogFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA7D6E60DEB8E5D00C3B586 /* FRCrashLogFinder.h */; };
+		9DA7D6F30DEB8E5D00C3B586 /* FRCrashLogFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA7D6E60DEB8E5D00C3B586 /* FRCrashLogFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DA7D6F40DEB8E5D00C3B586 /* FRCrashLogFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6E70DEB8E5D00C3B586 /* FRCrashLogFinder.m */; };
 		9DA7D6F50DEB8E5D00C3B586 /* FRFeedbackController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA7D6E80DEB8E5D00C3B586 /* FRFeedbackController.h */; };
 		9DA7D6F60DEB8E5D00C3B586 /* FRFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7D6E90DEB8E5D00C3B586 /* FRFeedbackController.m */; };
@@ -44,7 +45,7 @@
 		9DB6351E0E4DD9BE00C72888 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6351D0E4DD9BE00C72888 /* main.m */; };
 		9DB6353C0E4DDCB700C72888 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6353A0E4DDCB700C72888 /* AppController.m */; };
 		9DCF52A90DEC0D8A00EBF810 /* SystemProfileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF52A80DEC0D8A00EBF810 /* SystemProfileTestCase.m */; };
-		9DCF52AC0DEC0E4300EBF810 /* FRSystemProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCF52AA0DEC0E4300EBF810 /* FRSystemProfile.h */; };
+		9DCF52AC0DEC0E4300EBF810 /* FRSystemProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCF52AA0DEC0E4300EBF810 /* FRSystemProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DCF52AD0DEC0E4300EBF810 /* FRSystemProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF52AB0DEC0E4300EBF810 /* FRSystemProfile.m */; };
 		FC369CBB1100D505004C27F8 /* NSMutableDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC369CB91100D505004C27F8 /* NSMutableDictionary+Additions.h */; };
 		FC369CBC1100D505004C27F8 /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */; };
@@ -306,12 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA7D6EF0DEB8E5D00C3B586 /* FRApplication.h in Headers */,
-				9DA7D6F10DEB8E5D00C3B586 /* FRCommand.h in Headers */,
 				9DA7D6F30DEB8E5D00C3B586 /* FRCrashLogFinder.h in Headers */,
+				9DA7D6F10DEB8E5D00C3B586 /* FRCommand.h in Headers */,
+				4D38427524093D660007E04B /* FRConsoleLog.h in Headers */,
+				9DCF52AC0DEC0E4300EBF810 /* FRSystemProfile.h in Headers */,
 				9DA7D6F50DEB8E5D00C3B586 /* FRFeedbackController.h in Headers */,
 				9DA7D6F70DEB8E5D00C3B586 /* FRFeedbackReporter.h in Headers */,
 				9DA7D6FA0DEB8E5D00C3B586 /* FRUploader.h in Headers */,
-				9DCF52AC0DEC0E4300EBF810 /* FRSystemProfile.h in Headers */,
 				9D0EC0220DF00F250045EB76 /* FRExceptionReportingApplication.h in Headers */,
 				9D0EC0290DF011DB0045EB76 /* NSException+Callstack.h in Headers */,
 				FC369CBB1100D505004C27F8 /* NSMutableDictionary+Additions.h in Headers */,
